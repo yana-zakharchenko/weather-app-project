@@ -4,9 +4,8 @@
     padding: 15px 30px;
     margin-bottom: 10px;
     margin-left: 20px;
-    max-width: 300px;
-    transition: all 150ms ease-in-out;
-    font-size: 20px;
+    max-width: 350px;
+    font-size: 17px;
   }
   
   .table {
@@ -18,7 +17,7 @@
   .main-info {
     position: relative;
     top: -370px;
-    right: -350px;
+    right: -280px;
     width: 50%;
   }
   .change-city-form {
@@ -31,7 +30,7 @@
   }
   
   .container {
-    padding-top: 100px;
+    padding-top: 20px;
     padding-left: 50px;
     padding-bottom: 20px;
     max-height: fit-content;
@@ -40,26 +39,11 @@
     margin-bottom: 30px;
   }
   
-  .wrapper-1 {
-    position: relative;
-    top: -11px;
-    left: 15px;
-  }
-  .wrapper-2 {
-    position: relative;
-    top: -76px;
-    left: 115px;
-  }
-  .wrapper-3 {
-    position: relative;
-    top: -140px;
-    left: 190px;
-  }
+  
   .coder {
     text-align: center;
     margin: 0 auto;
-    position: relative;
-    top: -100px;
+    
   }
   
   body {
@@ -75,37 +59,37 @@
   
   h1 {
     font-weight: bold;
+    font-size: 25px;
   }
   
   h2 {
     font-weight: normal;
+    font-size: 20px;
   }
-  ul {
-    list-style-type: none;
-    margin: 30 auto;
-    position: relative;
-    top: -20px;
-    right: -200px;
-    display: grid;
+  h3 {
+    color: #3c3d40;
+    font-size: 25px;
   }
+  ul {list-style-type: none;}
+  
   
   .weekday,
   #current-date-time,
-  h3 {
-    color: #3c3d40;
-  }
+  
   
   #button {
-    color: #033f59;
+    color: #3c3d40;
     transition: all 150ms ease-in-out;
+    font-size: 13px;
   }
   #button-current {
     color: #3c3d40;
     transition: all 150ms ease-in-out;
     border: 1px solid #3c3d40;
+    border-radius: 2px;
     position: relative;
-    top: -130px;
-    left: 33%;
+    left: 80px;
+    font-size: 13px;
   }
   
   #button:hover {
@@ -117,6 +101,9 @@
   a {
     text-decoration: none;
     color: #3c3d40;
+    font-size: 11px;
+    position: relative;
+    top: 50px;
   }
   
   a:hover {
@@ -145,4 +132,5 @@
     padding-bottom: 5px;
     margin: 10px 10px 1px 15px;
   }
-  
+  .weather-app {max-width: 700px;}
+  #search-input {font-size: 13px;}
