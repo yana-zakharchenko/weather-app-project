@@ -36,7 +36,7 @@
     padding-left: 50px;
     padding-bottom: 20px;
     max-height: fit-content;
-    width: 50%;
+    
     margin-top: 50px;
     margin-bottom: 30px;
   }
@@ -75,10 +75,6 @@
   ul {list-style-type: none;}
   
   
-  .weekday,
-  #current-date-time,
-  
-  
   #button {
     color: #3c3d40;
     transition: all 150ms ease-in-out;
@@ -114,9 +110,12 @@
   }
   
   .weather-app {
+    max-width: 600px;
     padding-bottom: 10px;
     padding-right: 20px;
-    margin-bottom: -440px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     height: 520px;
     border: 2px solid rgb(96, 97, 100);
     border-radius: 3px;
@@ -134,5 +133,5 @@
     padding-bottom: 5px;
     margin: 10px 10px 1px 15px;
   }
-  .weather-app {max-width: 700px;}
+
   #search-input {font-size: 13px;}
