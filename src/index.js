@@ -26,6 +26,12 @@ function showTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("h1");
   temperatureElement.innerHTML = `${temperature}°C`;
+  let windSpeed = Math.round(response.data.wind.speed)
+  let windElement = document.querySelector("#wind-speed");
+  windElement.innerHTML = `${windSpeed}`;
+  let humidity = Math.round(response.data.main.humidity);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${humidity}`;
   console.log(response.data.name);
 }
 
@@ -50,6 +56,12 @@ function showCurrentTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("h1");
   temperatureElement.innerHTML = `${temperature}°C`;
+  let windSpeed = Math.round(response.data.wind.speed)
+  let windElement = document.querySelector("#wind-speed");
+  windElement.innerHTML = `${windSpeed}`;
+  let humidity = Math.round(response.data.main.humidity);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${humidity}`;
   console.log(response.data.name);
   let city = response.data.name;
   let cityElement = document.querySelector("h3");
