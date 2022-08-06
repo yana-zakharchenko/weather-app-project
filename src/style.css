@@ -72,7 +72,8 @@
     color: #3c3d40;
     font-size: 25px;
   }
-  ul {list-style-type: none;}
+  ul {list-style-type: none;
+  margin-left: 55px;}
   
   
   #button {
