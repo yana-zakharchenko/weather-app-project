@@ -59,10 +59,6 @@
     text-align: center;
   }
   
-  h1 {
-    font-weight: bold;
-    font-size: 25px;
-  }
   
   h2 {
     font-weight: normal;
@@ -74,8 +70,7 @@
   }
   ul {list-style-type: none;
   margin-left: 55px;}
-  
-  
+
   #button {
     color: #3c3d40;
     transition: all 150ms ease-in-out;
@@ -115,8 +110,8 @@
     padding-bottom: 10px;
     padding-right: 20px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 520px;
     border: 2px solid rgb(96, 97, 100);
     border-radius: 3px;
@@ -135,4 +130,21 @@
     margin: 10px 10px 1px 15px;
   }
 
-  #search-input {font-size: 13px;}
+  #search-input {font-size: 13px;
+  }
+
+  img {display: inline;
+line-height: 1;
+width: 80px;
+position: relative;
+left: 80px;
+padding: 0 auto;
+margin: 0 auto;
+
+}
+#temp {margin-right: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 700;
+position: relative;
+left: 80px;}

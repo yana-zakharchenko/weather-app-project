@@ -23,8 +23,11 @@ let currentTime = document.querySelector("#current-date-time");
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showTemp(response) {
+  let icon = response.data.weather[0].icon;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
   let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("h1");
+  let temperatureElement = document.querySelector("#temp");
   temperatureElement.innerHTML = `${temperature}°C`;
   let windSpeed = Math.round(response.data.wind.speed)
   let windElement = document.querySelector("#wind-speed");
@@ -56,8 +59,11 @@ let form = document.querySelector(".change-city-form");
 form.addEventListener("submit", changeCity);
 
 function showCurrentTemp(response) {
+  let icon = response.data.weather[0].icon;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
   let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("h1");
+  let temperatureElement = document.querySelector("#temp");
   temperatureElement.innerHTML = `${temperature}°C`;
   let windSpeed = Math.round(response.data.wind.speed)
   let windElement = document.querySelector("#wind-speed");
