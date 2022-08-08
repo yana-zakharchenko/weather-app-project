@@ -1,14 +1,19 @@
 .row {
     border: 1px solid black;
     border-radius: 2px;
-    padding: 15px 30px;
-    margin-bottom: 10px;
-    margin-left: 12px;
-    max-width: 350px;
-    font-size: 17px;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right:10px;
+    display: flow-root;
+   
   }
-  .col-4 {padding-left: 2px;
-          padding-right: 2px;}
+  .col-1 {display: inline;
+ 
+margin-right: 0;
+margin-left: 0;
+padding-left: 0;
+padding-right: 0;}
   
   .table {
     position: relative;
@@ -26,9 +31,6 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-  }
-  .weekday {
-    font-weight: bold;
   }
   
   .container {
@@ -136,7 +138,7 @@
   #search-input {font-size: 13px;
   }
 
-  img {display: inline;
+  #icon {display: inline;
 line-height: 1;
 width: 80px;
 position: relative;
@@ -151,3 +153,18 @@ margin: 0 auto;
   font-weight: 700;
 position: relative;
 left: 80px;}
+
+.forecast-max {font-size: 13px;
+font-weight: bold;
+}
+
+.forecast-min {font-size: 10px;
+  }
+
+.forecast-logos {width: 64px;
+display: inline-block;
+}
+.weekday {font-size: 13px;
+font-weight: bold;
+}
+
