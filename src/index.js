@@ -22,6 +22,25 @@ if (minutes < 10) {
 let currentTime = document.querySelector("#current-date-time");
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML +
+    `
+     <div class="col-1"><span class="weekday">${day}</span>
+   <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="forecast-logos">
+   <span class="forecast-max">20°C</span>/<span class="forecast-min">10°C</span>
+     </div>
+ `
+})
+  
+
+forecastHTML = forecastHTML + `</div>`
+forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemp(response) {
   let icon = response.data.weather[0].icon;
   let iconElement = document.querySelector("#icon");
@@ -96,3 +115,4 @@ let currentButton = document.querySelector("#button-current");
 currentButton.addEventListener("click", getCurrentPosition);
 
 search("Kyiv");
+displayForecast();
